@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color: #5757577e;
+    --white-color: #fff;
+    --background-color: #00324D;
+    --light-color: #82DDEF;
+    --input-color: #D1D3D4;
+    --green-color: #64BC38;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    background-color: var(--white-color);
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
+    text-align: center;
+    background-color: var(--background-color);
+}
+.form__title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+    color: var(--white-color);
+}
+.form__paragraph{
+    font-weight: 300;
+    color: var(--white-color);
+    
+    
+}
+.form__link{
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--light-color);
+
+}
+.form__container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+
+}
+.form__group{
+    position: relative;
+
+    
+}
+.form__input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: "Work Sans", sans-serif;
+
+
+}
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2
+}
+.form__label{
+    color: var(--input-color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.form_submit{
+    background: var(--green-color);
+    color: var(--white-color);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.form__line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;   
+    transform: scale(0);
+    transform: left bottom;
+        
+}
+@media (max-width:425px){
+    .form__title{
+        font-size: 1.5rem;
+    }
+}
