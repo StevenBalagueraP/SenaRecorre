@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b3e84203f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form class="form">
+        <h2 class="form__title">Registro</h2>
+        <div class="form__container">
+            <div class="form__group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="user" class="form__input" placeholder=" ">
+                <label for="user" class="form__label">Usuario:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" id="email" class="form__input" placeholder=" ">
+                <label for="email" class="form__label">Correo Institucional:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <i class="fa-solid fa-lock"></i>
+                <img src="../images/eye.ico" class="form__password" id="Eye">
+                <input type="password" id="password" class="form__input" placeholder=" ">
+                <label for="password" class="form__label">Contraseña:</label>
+                <span class="form__line"></span>
+            </div>
+            <input type="submit" class="form_submit" value="Registrarse">
+        </div>
+    </form>
+    <script src="scrips.js"></script>
+</body>
+</html>
